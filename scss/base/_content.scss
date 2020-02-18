@@ -1,0 +1,217 @@
+/* Style for Content*/
+.content {
+	@include responsive_mobile {
+				text-align: center;
+	}
+	/*ADS*/
+	.content__ads {
+		button {
+			height: 40px;
+			width: 106px;
+			background: #8262B5;
+			border: none;
+			font-family: 'Montserrat';
+			font-weight: 400;
+			font-size: 14px;
+			color: #FFFFFF;
+		}
+		padding-top: 31px;
+		padding-bottom: 79px;
+		.col-md-8 {
+			padding-left: 0px!important;
+		}
+		.col-md-4 {
+			padding-left: 35px!important;
+		}
+		.ads-left {
+			@include responsive_mobile {
+				margin-left: 10px;
+				margin-bottom: 10px;
+			}
+			height: 561px;
+			background: url('../img/content/head_content/left.jpg');
+			// padding-top: 320px;	
+			position: relative;	
+			.ads-box {
+				position: absolute;
+				top: 70%;
+				left: 50%;
+				transform : translateY(-50%);
+				span {
+					font-family: 'Pacifico';
+					font-weight: 400;
+					font-size: 30px;
+					@include responsive_mobile {
+						color: #C9c9c9;
+					}			
+				}
+				button {
+					float: right;
+					margin-right: 5px;
+				}
+			}
+		}
+		.ads-right {
+			.ads-right__text {
+				span {
+					font-size: 16px;
+					font-family: 'Montserrat';
+					font-weight: 450;
+					letter-spacing: 3px;
+				}
+			}
+				.ads-right__title {
+				span {
+					font-size: 20px;
+					font-family: 'Montserrat';
+					font-weight: bold;
+				}
+			}
+			.ads-right__top {
+				@include responsive_mobile {
+					margin-right: 10px;
+				}
+				height: 200px;
+				background: url('../img/content/head_content/top-right.jpg');
+				.ads-right__text {
+					padding: 88px 0px 0px 56px;
+				}
+				.ads-right__title {
+					padding: 0px 0px 76px 56px;
+				}
+				
+			}
+			.ads-right__bottom {
+				@include responsive_mobile {
+					margin-right: 10px;
+				}
+				margin-top: 30px;
+				height: 331px;
+				background: url('../img/content/head_content/bottom-right.jpg');
+				.ads-right__text {
+					padding: 123px 0px 0px 40px;
+				}
+				.ads-right__title {
+					margin-right: 202px;
+					margin-left: 40px;	
+				}
+				button {
+					margin:12px 52px 111px 40px;
+					width: 110px;
+				}
+			}
+		}
+	}
+	/*PRODUCT*/
+	.content__product {
+		.product__title {
+			.title__head {
+				padding-left: 0px;
+				p {
+					font-family: 'Montserrat';
+					font-weight: bold;
+					font-size: 12px;
+					color: #8262B5;
+				}
+			}
+			.title__content {
+				padding-left: 0px;
+				h3 {
+					font-family: 'Montserrat';
+					font-weight: bold;
+					font-size: 24px;
+					color: black;
+					letter-spacing: 2px;
+				}
+			}
+			@include responsive_mobile {
+				.line {
+					display: none;
+				}
+			}
+		}
+
+		.product__list {
+			margin-top: 50px;
+			.product {
+				@include responsive_mobile {
+					margin: auto;
+				}
+				img {
+					z-index: -10;
+					position: relative;
+					height: 323px;
+				}
+				a {
+					button {
+						position: absolute;
+						margin-top: 277px;
+						margin-left: 5px;
+						width: 118px;
+						height: 40px;
+						border : none;
+						background-color: #ffffff;
+						font-family: 'Montserrat';
+						font-weight: 500px;
+						font-size: 12px;
+						color: #424242;
+					}
+				}
+				a:hover {
+					button {
+						color: #8262B5;
+					}
+				}
+				.product__text-content {
+					margin-top: 20px;
+					padding-bottom: 50px;
+					letter-spacing: 1px;
+					height: 132px;
+					h5 {
+						font-family: 'Montserrat';
+						font-weight: 505;
+						font-size: 14px;
+						color: black;
+						letter-spacing: 0px;
+					}
+					i {
+						color: #F8BA04;
+						font-size: 13px;
+						margin-right: -7px;
+					}
+					p {
+						span{
+							font-size: 16px;
+							font-family: 'Open Sans';
+							font-weight: 700;
+							color: #8262B5;
+							strike {
+								font-weight: 400;
+								color: #999999;
+							}
+						}
+					}
+				}
+			}
+			// .product1 {
+			// 	width: 262px;
+			// 	margin-right: 30px;
+			// 	float: left;
+			// }
+			// .product2 {
+			// 	width: 262px;
+			// 	margin-right: 30px;
+			// 	float: left;
+			// }
+			// .product3 {
+			// 	width: 262px;
+			// 	margin-right: 30px;
+			// 	float: left;
+			// }
+			// .product4 {
+			// 	width: 262px;
+			// 	float: right;
+			// }
+		}
+	}	
+}

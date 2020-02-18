@@ -1,0 +1,53 @@
+/* Style for Footer
+*/
+.footer {
+	background-color: #222222;
+	border-bottom: 1px solid #393939;;
+	.container {
+		.footer-content {
+			padding-top: 50px;
+			.footer-content__col {
+				p {
+					color: #888888;
+				}
+				.col__title {
+					padding-top: 13px;
+					p {
+						font-size: 16px;
+						padding-bottom: 30px;
+						border-bottom: 1px solid #393939;
+						color: #F7F7F7;
+					}
+				}
+				.col-content {
+					padding-bottom: 49px;
+					p {
+						font-family: Open Sans;
+						font-size: 14px;
+						color: #888888;
+						a {
+							font-family: Open Sans;
+							font-size: 14px;
+							color: #888888;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+.copyright {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	background-color: #222222;
+	color: white;
+	font-family: Open Sans;
+	font-size: 14px;
+	prev {
+		color: #888888;
+		b {
+			color: #FF4628;
+		}
+	}
+}
